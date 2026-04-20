@@ -11,4 +11,4 @@ async def root():
 # http://127.0.0.1:8000/teste
 @app.get("/teste")
 async def test():
-    return {"teste": True, "num_aleatorio" : random.randint(0, 1000)}
+    return {"teste": True, "num_aleatorio" : random.randint(0, 20000)}
