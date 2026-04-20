@@ -8,7 +8,7 @@ app = FastAPI()
 async def root():
     return {"message": "Hello Word!"}
 
-# http://127.0.0.1:8000/test1
+# http://127.0.0.1:8000/teste
 @app.get("/teste")
 async def test():
     return {"teste": True, "num_aleatorio" : random.randint(0, 1000)}
