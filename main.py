@@ -4,11 +4,15 @@ import random
 app = FastAPI()
 
 # http://127.0.0.1:8000
-@app.get("/hello")
+@app.get("/")
 async def root():
     return {"message": "Hello Word!"}
 
 # http://127.0.0.1:8000/test1
+<<<<<<< Updated upstream
 @app.get("/funcao")
+=======
+@app.get("/funcao")
+>>>>>>> Stashed changes
 async def test():
     return {"teste": True, "num_aleatorio" : random.randint(0, 1000)}
