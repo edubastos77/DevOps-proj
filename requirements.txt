@@ -1,0 +1,2 @@
+fastapi=[standart]
+pydantic~=2.8.2
