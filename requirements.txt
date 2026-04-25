@@ -1,2 +1,2 @@
-fastapi=[standard]
-pydantic=2.8.2
+fastapi[standard]
+pydantic~=2.8.2
