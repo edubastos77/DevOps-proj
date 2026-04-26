@@ -41,9 +41,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - name: Run Discord Webhook
-        uses: johnnyhuy/actions-discord-git-webhook@main
+        uses: Sniddl/discord-commits@v1.8
         with:
           # Dê o nome da integração no Git - subtituir "YOUR_DISCORD_WEBHOOK_URL"
-          webhook_url: ${{ secrets.DISCORD_WEBHOOK }}    
+          webhook_url: ${{ secrets.DISCORD_WEBHOOK }}
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          template: "avatar-with-link"
+          include-extras: true
