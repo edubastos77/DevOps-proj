@@ -29,7 +29,7 @@ async def test_update_estudante_negativo():
 
 @pytest.mark.asyncio
 async def test_update_estudante_positivo():
-    result = await update_estudante(10)
+    result = await update_estudante(5)
     assert result
 
 @pytest.mark.asyncio
@@ -39,5 +39,5 @@ async def test_delete_estudante_negativo():
 
 @pytest.mark.asyncio
 async def test_delete_estudante_positivo():
-    result = await delete_estudante(10)
+    result = await delete_estudante(5)
     assert result
